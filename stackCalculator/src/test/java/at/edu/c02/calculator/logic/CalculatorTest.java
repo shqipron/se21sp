@@ -52,8 +52,15 @@ public class CalculatorTest {
 		assertEquals(3, result, 0);
 
 	}
-	
-	
+
+	@Test
+	public  void testModuloOperation() throws  Exception{
+		Calculator calc = new CalculatorImpl();
+		calc.push(8.0);
+		calc.push(4);
+		double result = calc.perform(Operation.mod);
+		assertEquals(0,result,0);
+	}
 	
 	
 

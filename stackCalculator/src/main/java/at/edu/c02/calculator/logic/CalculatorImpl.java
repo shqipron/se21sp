@@ -21,6 +21,8 @@ public class CalculatorImpl implements Calculator {
 			return a + b;
 		case sub:
 			return a - b;
+		case mod:
+			return a%b;
 		case div:
 			double c = a / b;
 			if (Double.isInfinite(c))
