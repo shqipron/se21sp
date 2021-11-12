@@ -25,8 +25,6 @@ public class CalculatorTest {
 
 		//verify
 		assertEquals(5, result, 0);
-		
-
 	}
 	
 	@Test
@@ -56,13 +54,11 @@ public class CalculatorTest {
 	@Test
 	public  void testModuloOperation() throws  Exception{
 		Calculator calc = new CalculatorImpl();
-		calc.push(8.0);
-		calc.push(4);
+		calc.push(9);
+		calc.push(5);
 		double result = calc.perform(Operation.mod);
-		assertEquals(0,result,0);
+		assertEquals(4,result,0);
 	}
-	
-	
 
 	//
 	@Test(expected = CalculatorException.class)
